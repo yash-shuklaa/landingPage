@@ -105,6 +105,7 @@ main{
 @media (max-width:600px) {
     *{
         overflow:unset;
+        overflow-x: hidden;
     }
     .options h4{
         display: none;
