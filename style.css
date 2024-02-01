@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #44ABB1;
+    width: 100%;
+    height: 60px;
+    border: 2px solid;
+}
+
+nav .logo{
+    font-size: 50px;
+    padding: 0 2vw;
+    font-weight: 900;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo span{
+    color: black;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    font-size: large;
+    padding: 0 2vw;
+    color: white;
+}
+
+.options i{
+    display: none;
+}
+
+.options button{
+    background-color:white;
+    color: black;
+    padding: .7vw 1vw;
+    border-radius: .5vw;
+    border: none;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.left{
+    /* background-color: aqua; */
+    width: 55vw;
+    height: calc(100vh - 60px);
+    padding: 0 2vw;
+
+}
+
+.left h1{
+    font-size: 5vw;
+    margin-top: 30px;
+    margin-top: 3%;
+}
+
+.left h1 span{
+    color: #44ABB1;
+}
+
+.left p{
+    font-size: 2.2vw;
+    text-align: justify;
+    text-justify: auto;
+    /* line-height: 3vh; */
+    margin: 3% 0;
+}
+
+.left button{
+    background-color: #44ABB1;
+    color: white;
+    padding: 1.6vw;
+    font-size: 2.8vw;
+    border: none;
+    border-radius: .5vw;
+    margin: 15px 29%;
+    text-wrap: nowrap;
+}
+
+.right{
+    /* background-color: cadetblue; */
+    width: 45vw;
+    height: calc(100vh - 60px);
+}
+
+.right img{
+    width: 100%;
+}
+
+
+@media (max-width:600px) {
+    *{
+        overflow:unset;
+    }
+    .options h4{
+        display: none;
+    }
+    .options i{
+        display: block;
+        color: white;
+        font-weight: 900;
+    }
+    .options button{
+        display: none;
+    }
+    main{
+        height: calc(100% - 60px);
+        flex-direction : column;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+    .left h1{
+        font-size: 9.5vw;
+        line-height: 11vw;
+        padding-right: 3vw;
+        text-align: justify;
+    }
+    .left p{
+        font-size: 4.9vw;
+        padding-right: 3vw;
+        font-weight: 549;
+    }
+    .left button{
+        margin: 0 40vw;
+    }
+    .right{
+        width: 100%;
+        height: 50%; 
+    } 
+
+}
